@@ -4,30 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:orientation="vertical"
-    android:background="#62C5BD"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/txtHoras"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="@string/txtHora" />
+    <com.google.android.material.textfield.TextInputLayout
 
-    <EditText
-        android:id="@+id/txtMinutos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="@string/txtMinutos" />
+        android:hint="@string/txtHora">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHoras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtMinutos">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtMinutos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/txtTitulo"
+        android:textSize="20dp"
         tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="40dp" />
 
@@ -41,5 +51,6 @@
         android:id="@+id/txvResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txtResultado"/>
+        android:text="@string/txtResultado"
+        android:textSize="20dp" />
 </LinearLayout>
