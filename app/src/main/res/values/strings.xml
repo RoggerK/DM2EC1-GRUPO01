@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ec1-Grupo01</string>
+    <string name="txtTitulo">Estacionamiento</string>
+    <string name="txtHora">Hora o Fracción:</string>
+    <string name="txtMinutos">Minutos:</string>
+    <string name="btnCalcular">Calcular Costo Final</string>
+    <string name="txtResultado">"Resultado "</string>
 </resources>
